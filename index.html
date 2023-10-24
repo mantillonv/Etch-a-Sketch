@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixel Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <img src="./images/logo.png" id="title-logo" alt= "Title Logo">
+    <div class="header">
+        <div class="ui-elements">
+            <div class="all-options">
+                <!-- Grid -->
+                <div class="grid-options">
+                    <div class="form">
+                        <p>New Grid:</p><input type="text" id="user-number" class="user-number">
+                        <p id="copy-input"></p>
+                        <button id="user-submit" class="user-submit">Submit</button>
+                    </div>
+                    <p id="prompt"></p>
+                </div>
+                <!-- Palette -->
+                <div class="palette-options">
+                    <div class="buttons">
+                        <form id="button-container">
+                            <div class="color-box1">
+                                <input type="color" id="color-select">
+                            </div>
+                            <div>Pen</div>
+                            <div class="color-box2">
+                                <input type="color" id="color-select-fill">
+                            </div>
+                            <div>Background</div>
+                            <button id="color-fill">Fill</button>
+                            <button id="eraser-btn">Eraser</button>
+                            <button id="randomize-btn">Randomize</button>
+                        </form>
+                        <button id="clear-button">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Panel -->
+            <div class="panel">
+                <div class="container">
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <p>2023 mantillonv for <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html

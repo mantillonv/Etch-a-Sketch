@@ -1,0 +1,136 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana", sans-serif;
+    color: rgb(83, 185, 248);
+    font-weight: 800;
+    background: linear-gradient(#f3f1f1, #b8b5b5);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#title-logo {
+    width: 800px;
+    height: 178px;
+    transform: scale(0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .ui-elements {
+    display: flex;
+    flex-direction: row;
+    gap: 16%;
+}
+
+.form p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Intro??? */
+
+.form {
+    display: flex;
+    flex-direction: 
+}
+
+.user-number {
+    width: 25px;
+    border: 2px solid rgb(71, 69, 69);
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.user-submit {
+    padding: 2px;
+    padding-right: 6px;
+    padding-left: 6px;
+    background-color: cornsilk;
+    border-radius: 4px;
+    font-family: exo;
+    border: 2px solid rgb(71, 69, 69)
+}
+
+#copy-input {
+    margin-right: 10px;
+}
+
+#prompt {
+    font-size: 14px;
+    color: rgb(228, 72, 72);
+}
+
+button {
+    padding: 2px;
+    padding-right: 6px;
+    padding-left: 6px;
+    background-color: cornsilk;
+    border-radius: 4px;
+    font-family: "Verdana", sans-serif;
+    border: 2px solid rgb(71, 69, 69);
+    cursor: pointer;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 15px solid rgb(150, 142, 142);
+    border-radius: 14px;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    border: 1px solid rgb(243, 239, 239);
+    flex: 1;
+}
+
+/* Column Red, Blue, Black? */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-family: monospace;
+    font-size: 12px;
+    margin-top: 8%;
+}
