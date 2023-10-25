@@ -15,11 +15,16 @@
             <div class="all-options">
                 <!-- Grid -->
                 <div class="grid-options">
-                    <div class="form">
-                        <p>New Grid:</p><input type="text" id="user-number" class="user-number">
-                        <p id="copy-input"></p>
-                        <button id="user-submit" class="user-submit">Submit</button>
-                    </div>
+                    <form id="grid-form">
+                        <div class="form">
+                            <p>New Grid:</p>
+                            <input type="text" id="user-number" class="user-number">
+                            <p id="copy-input"></p>
+                            <button id="user-submit" class="user-submit">Submit</button>
+                        </div>
+                        <p id="prompt"></p>
+                    </form>
+                    
                     <p id="prompt"></p>
                 </div>
                 <!-- Palette -->
@@ -30,12 +35,7 @@
                                 <input type="color" id="color-select">
                             </div>
                             <div>Pen</div>
-                            <div class="color-box2">
-                                <input type="color" id="color-select-fill">
-                            </div>
-                            <div>Background</div>
                             <button id="color-fill">Fill</button>
-                            <button id="eraser-btn">Eraser</button>
                             <button id="randomize-btn">Randomize</button>
                         </form>
                         <button id="clear-button">Clear</button>
@@ -56,4 +56,4 @@
     <script src="script.js"></script>
   </body>
 
-</html
+</html>
