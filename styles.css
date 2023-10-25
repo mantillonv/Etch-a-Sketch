@@ -4,8 +4,9 @@ html, body {
     font-family: "Verdana", sans-serif;
     color: rgb(83, 185, 248);
     font-weight: 800;
-    background: linear-gradient(#f3f1f1, #b8b5b5);
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), linear-gradient(90deg, transparent 24px, #2196F3 24px, #2196F3 25px, transparent 25px, transparent 49px, #2196F3 49px, #2196F3 50px, transparent 50px),
+                linear-gradient(0deg, transparent 24px, #2196F3 24px, #2196F3 25px, transparent 25px, transparent 49px, #2196F3 49px, #2196F3 50px, transparent 50px);
+    background-size: 50px 50px;
     height: 100%;
     width: 100%;
 }
@@ -35,35 +36,90 @@ html, body {
     gap: 16%;
 }
 
+#title-logo, .all-options, .panel {
+    border: 2px solid navy; 
+    padding: 12px;
+    background-color: navy;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background: linear-gradient(to bottom, navy, darkblue);
+}
+
+#color-select {
+    margin-bottom: 36px;
+    padding: 0px;
+    border radius: 6px;
+}
+
+.pen {
+    margin-top: 36px;
+    margin-bottom: 9px;
+}
+
+#color-fill, #randomize-btn, #clear-button {
+    width: 120px;
+    padding: 10px 16px;
+    margin-top: 12px;
+    background-color: #2eaee0; 
+    color: #FFFFFF; 
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    border: 2px solid #4682B4; 
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+#color-fill:hover, #randomize-btn:hover, #clear-button:hover {
+    background-color: #4682B4;
+    border-color: #87CEEB;
+    color: #FFFFFF;
+}
+
+
 .form p {
     margin: 0;
     padding: 0;
 }
-
-/* Intro??? */
 
 .form {
     display: flex;
     flex-direction: 
 }
 
+#user-number {
+    width: 38.512px;
+    height: 28px;
+    padding: 6px;
+    border: 2px;
+    margin-left: 18px;
+}
+
 .user-number {
-    width: 25px;
-    border: 2px solid rgb(71, 69, 69);
-    margin-left: 8px;
     margin-right: 8px;
     border-radius: 4px;
 }
 
 .user-submit {
-    padding: 2px;
-    padding-right: 6px;
-    padding-left: 6px;
-    background-color: cornsilk;
-    border-radius: 4px;
-    font-family: exo;
-    border: 2px solid rgb(71, 69, 69)
+    padding: 10px 16px;
+    background-color: #2eaee0; /* Light sky blue background color */
+    color: #FFFFFF; /* White text color */
+    border: 2px solid #4682B4; /* Border color similar to the background with slightly darker shade */
+    border-radius: 6px;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
+.user-submit:hover {
+    background-color: #4682B4; /* Darker blue on hover for contrast */
+    border-color: #87CEEB; /* Lighter border on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+
 
 #copy-input {
     margin-right: 10px;
@@ -109,9 +165,15 @@ button {
     width: 600px;
     display: flex;
     flex-direction: column;
-    border: 15px solid rgb(150, 142, 142);
+    border: 15px solid transparent; /* Set border color to transparent */
+    border-image: 
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        linear-gradient(90deg, transparent 24px, #2196F3 24px, #2196F3 25px, transparent 25px, transparent 49px, #2196F3 49px, #2196F3 50px, transparent 50px),
+        linear-gradient(0deg, transparent 24px, #2196F3 24px, #2196F3 25px, transparent 25px, transparent 49px, #2196F3 49px, #2196F3 50px, transparent 50px);
+    border-image-slice: 1;
     border-radius: 14px;
 }
+
 
 .row {
     display: flex;
@@ -132,5 +194,5 @@ button {
     font-family: sans-serif;
     font-family: monospace;
     font-size: 12px;
-    margin-top: 8%;
+    margin-top: 4%;
 }

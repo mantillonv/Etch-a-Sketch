@@ -133,4 +133,3 @@ window.addEventListener("load", () => {
     promptText.textContent = "";
     makeGrid();
 });
-
