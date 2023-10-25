@@ -56,7 +56,7 @@ html, body {
     margin-bottom: 9px;
 }
 
-#color-fill, #randomize-btn, #clear-button {
+#color-fill, #randomize-btn {
     width: 120px;
     padding: 10px 16px;
     margin-top: 12px;
@@ -71,10 +71,31 @@ html, body {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-#color-fill:hover, #randomize-btn:hover, #clear-button:hover {
+#color-fill:hover, #randomize-btn:hover {
     background-color: #4682B4;
     border-color: #87CEEB;
     color: #FFFFFF;
+}
+
+#clear-button {
+    width: 158px;
+    padding: 10px 16px;
+    background-color: #FF4136; /* Red background color */
+    color: #FFFFFF; /* White text color */
+    border: 2px solid #D32F2F; /* Darker red border color */
+    border-radius: 6px;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin-top: 12px;
+}
+
+#clear-button:hover {
+    background-color: #D32F2F; /* Darker red on hover for contrast */
+    border-color: #B71C1C; /* Lighter border on hover */
+    color: #FFFFFF; /* White text color on hover */
 }
 
 
@@ -152,6 +173,49 @@ button {
 #button-container {
     display: flex;
     flex-direction: column;
+}
+
+.checkbox-label {
+    display: inline-block;
+    width: 120px;
+    padding: 10px 16px;
+    background-color: #2eaee0;
+    color: #FFFFFF;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    border: 2px solid #4682B4;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Style the custom checkboxes when hovered */
+.checkbox-label:hover {
+    background-color: #4682B4;
+    border-color: #87CEEB;
+    color: #FFFFFF;
+}
+
+/* Style the custom checkboxes when checked */
+.hidden-checkbox:checked + .checkbox-label {
+    background-color: #4682B4;
+    border-color: #87CEEB;
+    color: #FFFFFF;
+}
+
+#fill-checkbox,
+#randomize-checkbox {
+    display: none;
+}
+
+
+.active-button {
+    background-color: #4682B4;
+    border-color: #87CEEB;
+    color: #FFFFFF;
 }
 
 .panel {
