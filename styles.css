@@ -80,9 +80,9 @@ html, body {
 #clear-button {
     width: 158px;
     padding: 10px 16px;
-    background-color: #FF4136; /* Red background color */
-    color: #FFFFFF; /* White text color */
-    border: 2px solid #D32F2F; /* Darker red border color */
+    background-color: #FF4136;
+    color: #FFFFFF;
+    border: 2px solid #D32F2F;
     border-radius: 6px;
     font-family: "Verdana", sans-serif;
     font-size: 14px;
@@ -93,11 +93,10 @@ html, body {
 }
 
 #clear-button:hover {
-    background-color: #D32F2F; /* Darker red on hover for contrast */
-    border-color: #B71C1C; /* Lighter border on hover */
-    color: #FFFFFF; /* White text color on hover */
+    background-color: #D32F2F;
+    border-color: #B71C1C;
+    color: #FFFFFF;
 }
-
 
 .form p {
     margin: 0;
@@ -124,9 +123,9 @@ html, body {
 
 .user-submit {
     padding: 10px 16px;
-    background-color: #2eaee0; /* Light sky blue background color */
-    color: #FFFFFF; /* White text color */
-    border: 2px solid #4682B4; /* Border color similar to the background with slightly darker shade */
+    background-color: #2eaee0;
+    color: #FFFFFF;
+    border: 2px solid #4682B4;
     border-radius: 6px;
     font-family: "Verdana", sans-serif;
     font-size: 14px;
@@ -136,9 +135,9 @@ html, body {
 }
 
 .user-submit:hover {
-    background-color: #4682B4; /* Darker blue on hover for contrast */
-    border-color: #87CEEB; /* Lighter border on hover */
-    color: #FFFFFF; /* White text color on hover */
+    background-color: #4682B4;
+    border-color: #87CEEB;
+    color: #FFFFFF;
 }
 
 
@@ -192,14 +191,12 @@ button {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Style the custom checkboxes when hovered */
 .checkbox-label:hover {
     background-color: #4682B4;
     border-color: #87CEEB;
     color: #FFFFFF;
 }
 
-/* Style the custom checkboxes when checked */
 .hidden-checkbox:checked + .checkbox-label {
     background-color: #4682B4;
     border-color: #87CEEB;
@@ -229,7 +226,7 @@ button {
     width: 600px;
     display: flex;
     flex-direction: column;
-    border: 15px solid transparent; /* Set border color to transparent */
+    border: 15px solid transparent;
     border-image: 
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         linear-gradient(90deg, transparent 24px, #2196F3 24px, #2196F3 25px, transparent 25px, transparent 49px, #2196F3 49px, #2196F3 50px, transparent 50px),
@@ -237,7 +234,6 @@ button {
     border-image-slice: 1;
     border-radius: 14px;
 }
-
 
 .row {
     display: flex;
@@ -248,8 +244,6 @@ button {
     border: 1px solid rgb(243, 239, 239);
     flex: 1;
 }
-
-/* Column Red, Blue, Black? */
 
 .footer {
     display: flex;

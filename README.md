@@ -8,5 +8,5 @@ Create your own pixel art with **Pixel Sketch**.
 - Randomize the RGB value for the Pen and Fill tools.
 - Clear the grid instantly whenever you need to start over again.
 
-<h1>Screenshot:</h1>
+<h2>Screenshot:</h2>
 <img src="./images/thumbnail.png" alt="Screenshot Sample">

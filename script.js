@@ -105,11 +105,6 @@ function drawOnMove(event) {
     }
 }
 
-
-
-
-
-
 function toggleFillMode() {
     eraserMode = false;
     isFillModeActive = fillCheckbox.checked;
@@ -120,7 +115,6 @@ function toggleRandomizeMode() {
     let columns = document.querySelectorAll(".column");
 
     columns.forEach(column => {
-        // Apply random color only to cells that are not already colored
         if (column.style.backgroundColor === "") {
             let randomRed = Math.floor(Math.random() * 256);
             let randomGreen = Math.floor(Math.random() * 256);
@@ -131,9 +125,6 @@ function toggleRandomizeMode() {
         }
     });
 }
-
-
-
 
 function changePenColor(event) {
     penColor = event.target.value;
@@ -159,7 +150,7 @@ function floodFill(cell, fillPenColor) {
 
         let currentCell = containerDiv.children[y].children[x];
         if (currentCell.style.backgroundColor === targetColor) {
-            currentCell.style.backgroundColor = fillPenColor; // Use fillPenColor instead of penColor
+            currentCell.style.backgroundColor = fillPenColor;
             fill(x + 1, y);
             fill(x - 1, y);
             fill(x, y + 1);
@@ -170,8 +161,6 @@ function floodFill(cell, fillPenColor) {
     fill(columnIndex, rowIndex);
 }
 
-
-
 function clearGrid() {
     let columns = document.querySelectorAll(".column");
     columns.forEach(column => {
@@ -181,7 +170,6 @@ function clearGrid() {
 
 // Page Load //
 window.addEventListener("load", () => {
-    // Set default grid size to 16x16
     number = 16;
     userValue.value = number;
     promptText.textContent = "";
